@@ -1,4 +1,5 @@
 require 'money'
+require 'colorize'
 I18n.config.available_locales = :en
 module Xe
     RATES = {
@@ -42,7 +43,7 @@ module Xe
   def currencyconvert(amount,current_curr,convert_curr)
     money=Money.from_amount(amount,current_curr)
     converted_money = money.exchange_to(convert_curr)
-    puts "Your target currency is  : #{converted_money.format}"
+    puts "Your target currency is  : #{converted_money.format}".colorize(:yellow)
   end
  
 end
