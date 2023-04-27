@@ -41,11 +41,11 @@ include Xe
 
         puts "------------------------------------------------------".colorize(:blue)
         puts "Choose your target currency : ".colorize(:blue) 
-        puts "1)  Indian(INR) ".colorize(:blue)
-        puts "2)  United states(USD) ".colorize(:blue)
-        puts "3)  Europe(EUR)".colorize(:blue)
-        puts "4)  Japanese Yen(JPY)".colorize(:blue)
-        puts "5)  Britain Pound(GBP)".colorize(:blue)
+        puts "1)  Indian         (INR)                       |".colorize(:blue)
+        puts "2)  United states  (USD)                       | ".colorize(:blue)
+        puts "3)  Europe         (EUR)                       |".colorize(:blue)
+        puts "4)  Japanese Yen   (JPY)                       |".colorize(:blue)
+        puts "5)  Britain Pound  (GBP)                       |".colorize(:blue)
         puts "------------------------------------------------------".colorize(:blue)
 
         begin
