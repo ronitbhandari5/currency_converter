@@ -30,14 +30,14 @@ include Xe
         puts "------------------------------------------------------".colorize(:light_green)
         puts "Enter the amount you want to convert : ".colorize(:light_green)
         puts "------------------------------------------------------".colorize(:light_green)
-        #-------------------------------------------
+        #-------------------------------------------------
         begin
           amount=Float(gets)
         rescue ArgumentError 
           puts "Enter amount in numbers :".colorize(:light_green)
           retry
         end
-        #---------------------------------------------
+        #-------------------------------------------------
 
         puts "------------------------------------------------------".colorize(:blue)
         puts "Choose your target currency : ".colorize(:blue) 
@@ -60,7 +60,7 @@ include Xe
         obj.currencyconvert(amount,current_curr,convert_curr)
   end
   
-end
+end 
 
 obj1 = Convert.new
 obj1.display_value
