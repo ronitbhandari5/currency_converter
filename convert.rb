@@ -5,28 +5,16 @@ class Excha
         I18n.config.available_locales = :en
         puts " Enter the amount : "
         @inr = gets.to_i
-        puts "choose your currency : "
+        puts "You want to convert currency into  : "
         puts "1) USD "
         puts "2) Euro"
         puts "3) INR"
         puts "4) JPY"
         puts "5) pound"
-        cc = gets.to_i
-        puts " You have chosen #{cc} "
-        puts "choose conversion  : "
-        puts "1) USD "
-        puts "2) Euro"
-        puts "3) INR"
-        puts "4) JPY"
-        puts "5) pound"
-        tc = gets.to_i
-        puts " You have chosen #{tc}"
 
-        Money.add_rate("INR", "USD", 0.0122)
-        rs = Money.from_amount(@inr, "INR").exchange_to("USD")
-        puts rs.format
+        option = gets.to_i
 
-
+        puts "You have chosen #{option}"
 
         case option
         when 1
@@ -50,7 +38,7 @@ class Excha
             rs = Money.from_amount(@inr,"INR").exchange_to("GBP")
             puts rs.format
         else
-            puts "Invalid amount!!!!!!"
+            puts "Please choose number from given options.."
         end
     end
 
